@@ -72,7 +72,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, delay: 0.55 }}>
-            Inventory management, custom software, academic writing, data analysis, and design —
+            Inventory management, custom software, academic writing, data analysis, and design,
             Elites is your one-stop partner for stock solutions and professional tech services across East Africa.
           </motion.p>
 

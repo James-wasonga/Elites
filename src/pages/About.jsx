@@ -50,7 +50,7 @@ export default function About() {
               initial={{ opacity: 0, scale: 0.94 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }} transition={{ duration: 0.75 }}>
-              <img src="/images/erp-screenshot.png" alt="Elites ERP Platform" />
+              <img src="/images/work-7.jpg" alt="Elites ERP Platform" />
               <div className="origins__img-label">Complete ERP Solution for Modern Businesses</div>
             </motion.div>
 

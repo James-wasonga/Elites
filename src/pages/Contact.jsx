@@ -74,9 +74,9 @@ export default function Contact() {
                   <div className="contact-info__icon"><Phone size={18} /></div>
                   <div><div className="contact-info__label">Phone Number</div><div className="contact-info__value">+254 112 706 387</div></div>
                 </a>
-                <a href="mailto:elites.ke@gmail.com" className="contact-info__item">
+                <a href="mailto:elitessolutions@gmail.com" className="contact-info__item">
                   <div className="contact-info__icon"><Mail size={18} /></div>
-                  <div><div className="contact-info__label">Email Address</div><div className="contact-info__value">elites.ke@gmail.com</div></div>
+                  <div><div className="contact-info__label">Email Address</div><div className="contact-info__value">elitessolutions@gmail.com</div></div>
                 </a>
                 <div className="contact-info__item">
                   <div className="contact-info__icon"><MapPin size={18} /></div>

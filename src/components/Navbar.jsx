@@ -64,7 +64,9 @@ export default function Navbar() {
       <div className="navbar__inner container">
         {/* Logo */}
         <Link to="/" className="navbar__logo">
-          <div className="navbar__logo-icon"><Box size={17} /></div>
+          <div className="navbar__logo-icon">
+          <img src="/logo.svg" alt="Elites logo" width="36" height="36" style={{ display:'block', borderRadius:'8px' }} />
+          </div>
           <div>
             <span className="navbar__brand">Elites</span>
             <span className="navbar__tagline">STOCK & TECH SOLUTIONS</span>
