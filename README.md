@@ -1,4 +1,4 @@
-# 🌿 WhiteFarm Stock Solutions — Website
+# Elites Stock & Tech Solutions — Website
 
 A world-class, fully responsive inventory solutions website built with **React + Vite + Framer Motion**.
 
@@ -20,7 +20,7 @@ A world-class, fully responsive inventory solutions website built with **React +
 ## 📁 Project Structure
 
 ```
-whitefarm/
+elites/
 ├── public/
 │   └── images/           ← Replace these with your actual photos
 │       ├── README.md     ← Photo guide (sizes & names)
@@ -61,7 +61,7 @@ whitefarm/
 
 ```bash
 # 1. Unzip and navigate to the project folder
-cd whitefarm
+cd elites
 
 # 2. Install dependencies
 npm install
@@ -120,7 +120,7 @@ Follow the prompts. Done.
 6. Output directory: dist
 7. Click Deploy
 
-Your site goes live at whitefarm.vercel.app (or your custom domain).
+Your site goes live at elites.vercel.app (or your custom domain).
 
 ---
 
@@ -130,7 +130,7 @@ Your site goes live at whitefarm.vercel.app (or your custom domain).
 Edit src/pages/Contact.jsx:
 ```js
 const WHATSAPP_NUMBER = '254791259510'; // your number without +
-const WHATSAPP_MSG = encodeURIComponent('Hello! Thanks for contacting WhiteFarm...');
+const WHATSAPP_MSG = encodeURIComponent('Hello! Thanks for contacting Elites...');
 ```
 
 Edit src/components/Footer.jsx for footer email/phone/location.
@@ -185,4 +185,4 @@ Edit the `projects` array in src/pages/OurWork.jsx
 
 ---
 
-WhiteFarm Stock Solutions © 2026. All rights reserved.
+Elites Stock Solutions © 2026. All rights reserved.
