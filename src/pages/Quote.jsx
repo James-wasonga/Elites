@@ -8,7 +8,9 @@ const WA_MSG = encodeURIComponent(
   'Hello, I came across Elites and I am interested in your services. I would like to get more information and discuss how you can help my business. Please get back to me at your earliest convenience. Thank you.'
 );
 
-const FORMSPREE_URL = 'https://formspree.io/f/xrewkapy';
+// const FORMSPREE_URL = 'https://formspree.io/f/xrewkapy';
+const FORMSPREE_URL = 'https://formspree.io/f/mzdlgqqq';
+
 
 export default function Quote() {
   const [form, setForm] = useState({

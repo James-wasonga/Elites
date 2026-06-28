@@ -9,7 +9,8 @@ const WA_MSG = encodeURIComponent(
   'Hello, I came across Elites and I am interested in your services. I would like to get more information and discuss how you can help my business. Please get back to me at your earliest convenience. Thank you.'
 );
 
-const FORMSPREE_URL = 'https://formspree.io/f/mbdvyalp';
+// const FORMSPREE_URL = 'https://formspree.io/f/mbdvyalp';
+const FORMSPREE_URL = 'https://formspree.io/f/xkolbaag';
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
@@ -74,7 +75,7 @@ export default function Contact() {
                   <div className="contact-info__icon"><Phone size={18} /></div>
                   <div><div className="contact-info__label">Phone Number</div><div className="contact-info__value">+254 112 706 387</div></div>
                 </a>
-                <a href="mailto:elitessolutions@gmail.com" className="contact-info__item">
+                <a href="mailto:elitessolutions3@gmail.com" className="contact-info__item">
                   <div className="contact-info__icon"><Mail size={18} /></div>
                   <div><div className="contact-info__label">Email Address</div><div className="contact-info__value">elitessolutions@gmail.com</div></div>
                 </a>
