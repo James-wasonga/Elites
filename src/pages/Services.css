@@ -1,0 +1,65 @@
+.svc-full-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.svc-full-card {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.07);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  cursor: default;
+}
+.svc-full-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--amber), var(--copper-light));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.38s ease;
+}
+.svc-full-card:hover::before { transform: scaleX(1); }
+.svc-full-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lift);
+  border-color: rgba(232,160,32,0.2);
+}
+.svc-full-card__header {
+  display: flex; align-items: flex-start; gap: 12px; margin-bottom: 18px;
+}
+.svc-full-card__icon {
+  width: 48px; height: 48px;
+  background: var(--amber-pale);
+  border-radius: var(--radius-md);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--amber);
+  flex-shrink: 0;
+  transition: background 0.25s, color 0.25s;
+}
+.svc-full-card:hover .svc-full-card__icon { background: var(--amber); color: var(--navy); }
+.svc-full-card__num { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.15em; color: var(--amber); }
+.svc-full-card__sub { font-size: 0.74rem; color: var(--text-muted); margin-top: 2px; }
+.svc-full-card__title { font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 10px; }
+.svc-full-card__desc { font-size: 0.86rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 20px; }
+.svc-full-card__features { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+.svc-full-card__feat {
+  display: flex; align-items: center; gap: 9px;
+  font-size: 0.81rem; color: var(--text-secondary); font-weight: 500;
+}
+.svc-full-card__dot { width: 5px; height: 5px; background: var(--amber); border-radius: 50%; flex-shrink: 0; }
+
+.svc-cta { background: var(--navy); text-align: center; }
+.svc-cta__heading {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  color: white; margin-bottom: 12px; letter-spacing: -0.02em;
+}
+.svc-cta__sub { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 36px; }
+
+@media (max-width: 1024px) { .svc-full-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .svc-full-grid { grid-template-columns: 1fr; } }

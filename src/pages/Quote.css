@@ -1,0 +1,227 @@
+/* ── QUOTE PAGE ── */
+.quote-hero {
+  position: relative;
+  background: var(--navy);
+  padding: 140px 0 64px;
+  text-align: center;
+  overflow: hidden;
+}
+.quote-hero__bg {
+  position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse 60% 70% at 50% 0%, rgba(232,160,32,0.12) 0%, transparent 70%);
+}
+.quote-hero__inner { position: relative; z-index: 2; }
+.quote-hero__heading {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  color: white;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+  margin-bottom: 10px;
+}
+.quote-hero__sub {
+  font-family: 'DM Serif Display', serif;
+  font-style: italic;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  color: var(--amber-light);
+  margin-bottom: 10px;
+}
+.quote-hero__desc {
+  font-size: 0.92rem;
+  color: var(--text-dim);
+  max-width: 460px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ── QUOTE BODY ── */
+.quote-body { background: var(--off-white); }
+
+.quote-card {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.07);
+  border-radius: var(--radius-xl);
+  padding: 44px 48px;
+  max-width: 760px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-card);
+}
+.quote-card__header {
+  text-align: center;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.quote-card__title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* ── FORM ── */
+.quote-form { display: flex; flex-direction: column; gap: 20px; }
+.quote-form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.quote-form__field { display: flex; flex-direction: column; gap: 6px; }
+.quote-form__label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+.quote-form__input,
+.quote-form__select,
+.quote-form__textarea {
+  background: #f8f7f4;
+  border: 1.5px solid rgba(0,0,0,0.1);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  font-size: 0.92rem;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text-primary);
+  width: 100%;
+  transition: all 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
+  resize: none;
+}
+.quote-form__select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237a8394' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+  cursor: pointer;
+}
+.quote-form__input::placeholder,
+.quote-form__textarea::placeholder { color: #b0aaa0; }
+.quote-form__input:focus,
+.quote-form__select:focus,
+.quote-form__textarea:focus {
+  outline: none;
+  border-color: var(--amber);
+  background: white;
+  box-shadow: 0 0 0 3px rgba(232,160,32,0.12);
+}
+.quote-form__submit {
+  width: 100%;
+  background: var(--amber);
+  color: var(--navy);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.96rem;
+  font-weight: 700;
+  padding: 15px 32px;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: all 0.25s;
+  box-shadow: var(--shadow-amber);
+  margin-top: 4px;
+}
+.quote-form__submit:hover {
+  background: var(--amber-light);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(232,160,32,0.4);
+}
+
+/* ── WHATSAPP CTA ── */
+.quote-wa {
+  text-align: center;
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.btn-whatsapp-lg {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.94rem;
+  padding: 14px 28px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s;
+  box-shadow: 0 4px 16px rgba(37,211,102,0.32);
+}
+.btn-whatsapp-lg:hover {
+  background: #1ebe5a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37,211,102,0.42);
+}
+.btn-whatsapp-sm {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.86rem;
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.btn-whatsapp-sm:hover { background: #1ebe5a; transform: translateY(-1px); }
+.quote-wa__note {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+.quote-wa__note a {
+  color: var(--amber);
+  font-weight: 600;
+  text-decoration: none;
+}
+.quote-wa__note a:hover { text-decoration: underline; }
+
+/* ── SUCCESS ── */
+.quote-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 32px 0;
+  gap: 16px;
+}
+.quote-success__icon {
+  width: 80px; height: 80px;
+  background: var(--amber-pale);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--amber);
+}
+.quote-success__heading {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+.quote-success__text {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  max-width: 420px;
+}
+.quote-success__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .quote-card { padding: 28px 20px; }
+  .quote-form__row { grid-template-columns: 1fr; }
+}
