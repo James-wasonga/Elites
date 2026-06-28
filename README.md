@@ -129,7 +129,7 @@ Your site goes live at elites.vercel.app (or your custom domain).
 ### Change contact details
 Edit src/pages/Contact.jsx:
 ```js
-const WHATSAPP_NUMBER = '254791259510'; // your number without +
+const WHATSAPP_NUMBER = '254....'; // your number without +
 const WHATSAPP_MSG = encodeURIComponent('Hello! Thanks for contacting Elites...');
 ```
 
