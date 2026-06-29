@@ -52,7 +52,7 @@ export default function Footer() {
           <div className="footer__col-title">Operational Support</div>
           <ul className="footer__contact-list">
             <li><a href="tel:+254112706387" className="footer__contact-item"><Phone size={14}/>+254 112 706 387</a></li>
-            <li><a href="mailto:elites.ke@gmail.com" className="footer__contact-item"><Mail size={14}/>elites.ke@gmail.com</a></li>
+            <li><a href="mailto:elitessolutions3@gmail.com" className="footer__contact-item"><Mail size={14}/>elitessolutions3@gmail.com</a></li>
             <li><span className="footer__contact-item"><MapPin size={14}/>Nairobi, Kenya</span></li>
           </ul>
           <div className="footer__guarantee">

@@ -77,7 +77,7 @@ export default function Contact() {
                 </a>
                 <a href="mailto:elitessolutions3@gmail.com" className="contact-info__item">
                   <div className="contact-info__icon"><Mail size={18} /></div>
-                  <div><div className="contact-info__label">Email Address</div><div className="contact-info__value">elitessolutions@gmail.com</div></div>
+                  <div><div className="contact-info__label">Email Address</div><div className="contact-info__value">elitessolutions3@gmail.com</div></div>
                 </a>
                 <div className="contact-info__item">
                   <div className="contact-info__icon"><MapPin size={18} /></div>
